@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #0b0f10;
+  --green: #00c48c;
+  --darkgreen: #005f4b;
+  --grey: #888888;
+  --darkgrey: #1b1b1b;
+  --red: #f94141;
+  --blue: #3a80e9;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+::selection {
+  background: var(--green);
+  color: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darkgrey);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 10px;
+}
+
+a {
+  color: (var(--white));
+  text-decoration: none;
+}
+
+.grey-wrapper {
+  display: block;
+  width: 89%;
+  background-color: rgba(69, 75, 69, 0.07);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  /* padding: 1rem 1.5rem; */
+  box-shadow: 0 0 8px rgba(72, 76, 72, 0.528);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.greyy-wrapper {
+  display: block;
+  width: 88%;
+  /* background-color: rgba(0, 0, 0, 0.07); */
+  /* margin: 1.5rem auto; */
+  margin-left: 70px;
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  /* box-shadow: 0 0 12px rgba(72, 76, 72, 0.4); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}

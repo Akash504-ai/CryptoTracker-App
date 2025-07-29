@@ -1,0 +1,129 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 50px;
+  background-color: var(--black);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* ✅ Correct Dashboard link button style */
+.dashboard-btn {
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 3rem;
+  font-weight: 600;
+}
+
+.dashboard-btn:hover {
+  background-color: #00cc66; /* Optional: lighter green on hover */
+}
+
+.link:hover {
+  color: var(--green);
+}
+
+.mobile-drawer {
+  display: none;
+}
+
+.drawer-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.drawer-list {
+  height: 100%;
+  width: 100%;
+}
+
+.drawer-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--darkgrey);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.drawer-div a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.drawer-div p {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: var(--grey);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.drawer-div p:hover {
+  color: var(--darkgreen);
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .mobile-drawer {
+    display: block;
+  }
+
+  .drawer-div {
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .drawer-div p {
+    font-size: 17px;
+    padding: 8px 0;
+  }
+}

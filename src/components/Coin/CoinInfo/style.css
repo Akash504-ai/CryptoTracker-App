@@ -1,0 +1,32 @@
+.grey-wrappeer {
+  background-color: var(--darkgrey);
+  padding: 24px;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 88%;
+  margin: 1.5rem auto;
+}
+
+.coin-info-heading {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.coin-info-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.read-more {
+  color: var(--green); /* or use #00ff00 */
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

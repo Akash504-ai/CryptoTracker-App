@@ -1,0 +1,32 @@
+.time-range-container,
+.data-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* smaller spacing */
+  margin: 12px 0;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.range-button,
+.data-button {
+  padding: 6px 12px; /* smaller button height */
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--darkgrey);
+  background-color: var(--black);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.range-button.active,
+.data-button.active {
+  background-color: var(--green);
+  color: black;
+}
+
+.range-button:hover,
+.data-button:hover {
+  background-color: var(--darkgrey);
+}

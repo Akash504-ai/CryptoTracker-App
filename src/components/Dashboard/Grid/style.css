@@ -1,0 +1,337 @@
+.grid-container {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 300px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.grid-container:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+}
+
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.coin-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid #444;
+  padding: 5px;
+  background-color: #111;
+  object-fit: contain;
+}
+
+.info {
+  display: flex;
+}
+
+.name-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.star-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.star-icon {
+  color: #ffffffcc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.star-icon:hover {
+  transform: scale(1.2);
+}
+
+.coin-symbol {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.coin-name {
+  color: #aaaaaa;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.chip-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.price-chip {
+  border: 2px solid var(--green);
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--green);
+  font-size: 1.1rem;
+  background-color: rgba(134, 200, 36, 0.1); /* var(--green) with transparency */
+  margin-top: 2px;
+}
+
+.icon-chip {
+  display: flex;
+  border: 2px solid var(--green);
+  height: 20px;
+  width: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.chip-red {
+  border: 2px solid var(--red);
+  color: var(--red);
+  background-color: rgba(200, 60, 60, 0.1);
+}
+
+.icon-chip.chip-red {
+  color: var(--red);
+  background-color: rgba(200, 60, 60, 0.1);
+}
+
+.price-chip:hover,
+.icon-chip:hover {
+  background-color: var(--green);
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.chip-red:hover {
+  background-color: #c32222;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns text to the left */
+  padding: 10px 0;
+  gap: 4px; /* Adds spacing between each line */
+  margin-top: -20px;
+}
+
+.coin-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* margin-bottom: 5px; */
+  margin-top: -2px;
+}
+
+.total_volume1,
+.total_volume2 {
+  font-size: 1rem;
+  color: #aaaaaa; /* Or any color you're using */
+  margin: 7.5px 0; /* Reduce top and bottom margin */
+}
+
+
+.green-text {
+  color: var(--green);
+}
+
+.red-text {
+  color: var(--red);
+}
+
+.total_volume1{
+  margin-top: 15px;
+}
+
+.total_volume2{
+  margin-top: 15px;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+@media (max-width: 1024px) {
+  .grid-container {
+    padding: 16px;
+    font-size: 16px;
+    gap: 18px; /* Slightly reduce gap for medium screens */
+  }
+
+  .coin-symbol {
+    font-size: 1.2rem;
+  }
+
+  .coin-name {
+    font-size: 0.9rem;
+  }
+
+  .price-chip {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .coin-price {
+    font-size: 1.3rem;
+  }
+
+  .total_volume1,
+  .total_volume2 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .info-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .coin-logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .coin-symbol {
+    font-size: 1.1rem;
+  }
+
+  .coin-name {
+    font-size: 0.85rem;
+  }
+
+  .chip-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .price-chip {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.9rem;
+  }
+
+  .coin-price {
+    font-size: 1.2rem;
+  }
+
+  .total_volume1,
+  .total_volume2 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    padding: 12px;
+    gap: 0px;
+    height: 270px;
+  }
+
+  .coin-logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .coin-symbol {
+    font-size: 1rem;
+  }
+
+  .coin-name {
+    font-size: 0.8rem;
+  }
+
+  .coin-price {
+    font-size: 1.2rem;
+  }
+
+  .total_volume1,
+  .total_volume2 {
+    font-size: 0.9rem;
+  }
+
+  .total_volume1{
+    margin-top: -8px;
+  }
+
+  .total_volume2 {
+    margin-top: -1px;
+  }
+
+  .chip-flex {
+    margin-top: 22px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+
+  .price-chip {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.8rem;
+  }
+
+  .icon-chip {
+    height: 18px;
+    width: 14px;
+  }
+}
+
+/* Wrap the star properly in the corner */
+.star-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+/* Style the star icon itself */
+.star-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+.star-icon:hover {
+  transform: scale(1.2);
+  color: gold;
+}
+
+/* Optional: when active/starred */
+.starred {
+  color: gold;
+}

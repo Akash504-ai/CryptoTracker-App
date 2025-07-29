@@ -1,0 +1,12 @@
+.Loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;             /* Corrected this */
+  height: 100vh;
+  background-color: black;
+  position: fixed;          /* Use fixed for full-screen overlay */
+  top: 0;                   /* Ensure it starts from top */
+  left: 0;                  /* Ensure it starts from left */
+  z-index: 1000;
+}
