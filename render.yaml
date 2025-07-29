@@ -1,5 +1,5 @@
 services:
-- type: static
+- type: web
   name: crypto-project
   env: static
   buildCommand: npm run build
