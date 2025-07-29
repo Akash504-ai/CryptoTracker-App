@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: crypto-project
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
