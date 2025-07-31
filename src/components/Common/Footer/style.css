@@ -4,7 +4,7 @@
   margin-bottom: 0px;
   color: var(--white);
   text-align: center;
-  width: 52.9vh;
+  width: 89.5vw;
 }
 
 .footer-content {
@@ -41,4 +41,10 @@
 
 .footer-links a:hover {
   color: var(--green);
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 94vw;
+  }
 }
