@@ -16,7 +16,7 @@ import {
 } from "react-share";
 
 const SharePopup = ({ onClose }) => {
-  const link = "http://localhost:5173/";
+  const link = "https://cryptotrackerapp-jade.vercel.app/";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(link);

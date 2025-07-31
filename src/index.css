@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
@@ -15,12 +14,12 @@
 
 body {
   margin: 0;
-  -webkit-font-smoothing : antialiased;
-  -moz-osx-font-smoothing : grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: var(--black);
   color: var(--white);
   font-family: "Inter", sans-serif;
-  height: 100vh;
+  height: 150vh;
 }
 
 ::selection {
@@ -42,30 +41,30 @@ body {
 }
 
 a {
-  color: (var(--white));
+  color: var(--white);
   text-decoration: none;
 }
 
+/* ✅ Responsive width using % + max-width for grey-wrapper */
 .grey-wrapper {
   display: block;
-  width: 89%;
+  width: 90%;
+  max-width: 1200px;
   background-color: rgba(69, 75, 69, 0.07);
   margin: 1.5rem auto;
   border-radius: 0.8rem;
-  /* padding: 1rem 1.5rem; */
   box-shadow: 0 0 8px rgba(72, 76, 72, 0.528);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* ✅ Responsive greyy-wrapper */
 .greyy-wrapper {
   display: block;
-  width: 88%;
-  /* background-color: rgba(0, 0, 0, 0.07); */
-  /* margin: 1.5rem auto; */
-  margin-left: 70px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 1.5rem auto;
   border-radius: 0.8rem;
   padding: 1rem 1.5rem;
-  /* box-shadow: 0 0 12px rgba(72, 76, 72, 0.4); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: "Poppins", sans-serif;
 }
