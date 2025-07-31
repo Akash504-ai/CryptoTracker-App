@@ -8,12 +8,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .page-label {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 450;
   color: var(--white);
   margin-bottom: 10px;
 }

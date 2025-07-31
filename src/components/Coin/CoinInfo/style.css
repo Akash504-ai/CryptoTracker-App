@@ -1,21 +1,21 @@
 .grey-wrappeer {
   background-color: var(--darkgrey);
-  padding: 24px;
+  padding: 20px;
   border-radius: 16px;
   margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  width: 88%;
+  width: 84%;
   margin: 1.5rem auto;
 }
 
 .coin-info-heading {
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 12px;
 }
 
 .coin-info-desc {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.6;
   color: #cccccc;
 }

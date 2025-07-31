@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* smaller spacing */
+  gap: 7px; /* smaller spacing */
   margin: 12px 0;
   flex-wrap: wrap; /* allows wrapping on small screens */
 }
@@ -29,4 +29,10 @@
 .range-button:hover,
 .data-button:hover {
   background-color: var(--darkgrey);
+}
+
+@media (max-width: 480px) {
+  .abc {
+    width: 84% !important;
+  }
 }

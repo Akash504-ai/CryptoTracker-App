@@ -86,3 +86,10 @@
 .download-btn:hover {
   background-color: #2eb82e;
 }
+
+@media (max-width: 480px) {
+  .table-container,
+  .timeline-container{
+    font-size: 10px;
+  }
+}

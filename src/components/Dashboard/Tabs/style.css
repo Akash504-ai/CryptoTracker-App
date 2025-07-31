@@ -43,9 +43,12 @@
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 4 cards per row */
-  gap: 20px; /* space between cards */
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ✅ Responsive grid */
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin-left: 7px;
 }
 
 /* Responsive breakpoints */

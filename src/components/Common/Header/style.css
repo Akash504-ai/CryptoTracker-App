@@ -108,6 +108,7 @@
 @media screen and (max-width: 800px) {
   .navbar {
     padding: 20px;
+    width: 350px;
   }
 
   .links {

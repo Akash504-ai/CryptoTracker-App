@@ -63,7 +63,7 @@ const ChartComponent = ({ id = "bitcoin", currency = "inr" }) => {
               gradient.addColorStop(1, "rgba(28, 28, 28, 0.1)");
               return gradient;
             },
-            borderColor: "#48ef83", // soft modern green
+            borderColor: "#48ef83",
             tension: 0.4,
             pointRadius: 0,
           },
@@ -78,22 +78,23 @@ const ChartComponent = ({ id = "bitcoin", currency = "inr" }) => {
 
   useEffect(() => {
     fetchChartData();
-  }, [days, metric]);
+  }, [days, metric, id]); // ✅ Added id dependency so chart updates on coin change
 
   return (
-    <div
+    <div className="abc"
       style={{
-        width: "100%",
+        width: "96%",
+        maxWidth: "100%",
         backgroundColor: "#1c1c1c",
         padding: "24px",
         borderRadius: "16px",
-        boxShadow: "0 0 20px rgba(0, 255, 0, 0.08)",
+        // boxShadow: "0 0 20px rgba(0, 255, 0, 0.08)",
         color: "#fff",
         fontFamily: "sans-serif",
       }}
     >
       <h2 style={{ textAlign: "center", marginBottom: "24px", fontWeight: 600 }}>
-        {id.toUpperCase()} Performance Chart
+        Performance Chart
       </h2>
 
       {/* Controls Row */}
@@ -155,34 +156,38 @@ const ChartComponent = ({ id = "bitcoin", currency = "inr" }) => {
       {loading ? (
         <p style={{ textAlign: "center", color: "#999" }}>Loading Chart...</p>
       ) : (
-        <Line
-          data={chartData}
-          options={{
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                backgroundColor: "#333",
-                titleColor: "#48ef83",
-                bodyColor: "#fff",
-                borderColor: "#48ef83",
-                borderWidth: 1,
+        <div style={{  
+                      height: "400px",
+                      
+                      overflowX: "auto", }}>
+          <Line
+            data={chartData}
+            options={{
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                tooltip: {
+                  backgroundColor: "#333",
+                  titleColor: "#48ef83",
+                  bodyColor: "#fff",
+                  borderColor: "#48ef83",
+                  borderWidth: 1,
+                },
               },
-            },
-            scales: {
-              x: {
-                ticks: { color: "#aaa" },
-                grid: { color: "rgba(255, 255, 255, 0.05)" },
+              scales: {
+                x: {
+                  ticks: { color: "#aaa" },
+                  grid: { color: "rgba(255, 255, 255, 0.05)" },
+                },
+                y: {
+                  ticks: { color: "#aaa" },
+                  grid: { color: "rgba(255, 255, 255, 0.05)" },
+                },
               },
-              y: {
-                ticks: { color: "#aaa" },
-                grid: { color: "rgba(255, 255, 255, 0.05)" },
-              },
-            },
-          }}
-          style={{ height: "500px", maxHeight: "600px" }}
-        />
+            }}
+          />
+        </div>
       )}
     </div>
   );

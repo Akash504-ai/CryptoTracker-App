@@ -7,30 +7,37 @@
 }
 
 .list-row {
-  width: 98.5%;
-  background-color: #1e1e1e;
+  width: 97%;
+  /* background-color: #1e1e1e; */
   border-radius: 10px;
   padding: 16px;
   margin-bottom: 20px; /* 👈 This adds space between the rows */
   transition: transform 0.2s ease;
+  height: 75px;
+  margin-top: -15px;
 }
 
 .list-row:hover {
   transform: scale(1.01);
 }
 
-
 .list-content-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 3fr;
+  grid-template-columns: 40px 80px 70px 100px 1fr 30px; /* image, name, %/icon, price, volume, star */
   align-items: center;
-  gap: 205px;
+  gap: 12px;
+}
+
+.star-wrapper {
+  margin-left: auto; /* pushes to the right */
+  display: flex;
+  align-items: center;
 }
 
 /* Coin logo */
 .coin-logo {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   object-fit: contain;
   display: block;
   margin: auto;
@@ -60,7 +67,7 @@
 .chip-flexx {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -87,7 +94,7 @@
 
 /* Price */
 .coin-pricee {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
 }
@@ -103,7 +110,7 @@
 /* Volume & Market Cap */
 .total_volume11,
 .total_volume22 {
-  font-size: 0.85rem;
+  font-size: 0.77rem;
   color: var(--gray);
   line-height: 1.4;
   text-align: left;
@@ -154,7 +161,23 @@
 
 @media (max-width: 480px) {
   .list-row {
-    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 10px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  .list-content-wrapper {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 
   .coin-logo {
@@ -162,26 +185,62 @@
     width: 32px;
   }
 
+  .name-coll {
+    display: flex;
+    flex-direction: column;
+  }
+
   .coin-id {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .coin-symbol {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .chip-flexx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 50px;
+    margin-right: -95px;
+  }
+
+  .price-chip {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+
+  .icon-chip {
+    height: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .coin-pricee {
-    font-size: 0.95rem;
+    display: none; /* hide on mobile */
   }
 
   .total_volume11,
   .total_volume22 {
-    font-size: 0.75rem;
+    display: none;
   }
 
-  .price-chip {
-    font-size: 0.8rem;
-    padding: 4px 7px;
+  .star-wrapper {
+    margin-left: auto;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+  }
+
+  .star-icon {
+    font-size: 22px;
   }
 }
 
@@ -204,7 +263,6 @@
   grid-template-columns: auto 1fr 2fr 2fr 2fr 3fr; 
   gap: 16px; 
 } */
-
 
 .list-content-wrapper {
   display: grid;

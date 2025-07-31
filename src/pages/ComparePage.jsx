@@ -24,7 +24,7 @@ const customStyles = {
     color: "#0f0",
   }),
 };
-
+ 
 const ComparePage = () => {
   const [coins, setCoins] = useState([]);
   const [selectedCoins, setSelectedCoins] = useState([]);
