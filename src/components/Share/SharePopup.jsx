@@ -1,5 +1,5 @@
 import React from "react";
-import "./SharePopuo.css";
+import "./sharePopuo.css";
 import {
   FacebookShareButton,
   TwitterShareButton,

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 :root {
   --white: #ffffff;
   --black: #0b0f10;
@@ -54,8 +56,6 @@ a {
   box-shadow: 0 0 8px rgba(72, 76, 72, 0.528);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 .greyy-wrapper {
   display: block;
