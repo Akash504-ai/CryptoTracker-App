@@ -81,9 +81,11 @@ src/
 📷 Screenshots
 
 
-<img width="1889" height="921" alt="image" src="https://github.com/user-attachments/assets/f09ac3f0-219d-4b4b-b187-2dd3d42f6cf7" />
-<img width="1862" height="891" alt="image" src="https://github.com/user-attachments/assets/e252cfd5-49b4-4bb8-b889-7cde4665d185" />
-<img width="1714" height="510" alt="image" src="https://github.com/user-attachments/assets/0c8da17a-5f3e-401f-8234-99fcd04665d1" />
+<img width="1907" height="909" alt="image" src="https://github.com/user-attachments/assets/0c225dee-f8e4-4319-85fa-8b0343b14b99" />
+<img width="1894" height="885" alt="image" src="https://github.com/user-attachments/assets/bd0ec139-c7f5-4432-9154-972266697302" />
+<img width="1904" height="867" alt="image" src="https://github.com/user-attachments/assets/b82cf584-44e8-470a-9345-9f9b47e8d531" />
+<img width="1907" height="891" alt="image" src="https://github.com/user-attachments/assets/4997f95f-d5c1-4e22-8ed7-b23d1cb6bcd6" />
+
 
 
 🙌 Acknowledgements
