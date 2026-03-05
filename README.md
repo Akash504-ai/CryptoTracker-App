@@ -57,7 +57,7 @@ CryptoTracker is a modern, fully responsive React web application that allows us
 ---
 
 ## 📁 Folder Structure
-
+```markdown
 src/
 │
 ├── assets/ # Images and icons
@@ -75,7 +75,7 @@ src/
 ├── App.js # Main app layout
 ├── index.js # App entry point
 └── style.css # Global styles
-
+```
 ---
 
 📷 Screenshots
