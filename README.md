@@ -98,7 +98,4 @@ src/
 🧑‍💻 Author
 Made with (◕‿◕)  by Akash
 
-📌 License
-Open-source under MIT License.
-
 **Live Site**: [cryptotrackerapp-jade.vercel.app](https://cryptotrackerapp-jade.vercel.app)
