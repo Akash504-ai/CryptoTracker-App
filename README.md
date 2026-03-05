@@ -89,11 +89,11 @@ src/
 
 
 🙌 Acknowledgements
-CoinGecko API
+`CoinGecko API`
 
-Chart.js
+`Chart.js`
 
-Framer Motion
+`Framer Motion`
 
 🧑‍💻 Author
 Made with (◕‿◕)  by Akash
